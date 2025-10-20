@@ -1,1 +1,112 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    background: hsl(187, 64%, 48%);
+    margin: 0;
+    padding: 2rem;
+}
 
+.background-container {
+    position: relative;
+    padding: 40px;
+}
+
+#form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0/1);
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: horizontal;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border:none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  pointer-events: none;
+}
+
+.form-group:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+#char-count {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.validation-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#feedback-display {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-entry {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.feedback-entry:last-child {
+  border-bottom: none;
+}
